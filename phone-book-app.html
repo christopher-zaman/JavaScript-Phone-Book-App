@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>Phone Book App</title></head>
+<body>
+  <p>Use arrays and loops to search phone numbers?</p>
+  <h1>Phone Book App</h1>
+
+  <!--Feature #0: Display the main menu and prompt user for input-->
+  <p>Main Menu</p>
+  <p id="mainMenu"></p>
+  <input id="theMainMenu"><button id="myMainBtn" onclick="mainFunction()">Enter</button>
+  <p id="useChoice"></p>
+
+  <!--Feature #1: Search a person's phone number by their name-->
+  <div id="feature-one">
+    <p>Search by Name</p>
+    <input id="searchName"><button id="searchableFunction" onclick="searchByName()">Search By Name</button>
+    <p id="nameResult"></p>
+  </div>
+
+  <!--Feature #2: Search a person's name by thier phone number-->
+  <div id="feature-two">
+    <p>Search By Number</p>
+    <input id="lookitup"><button id="searchByNumberFunction" onclick="lookUp()">Search by number</button><br>
+    <p id="result"></p>
+  </div>
+
+  <!--incomplete feature-->
+  <div id="moveithere"></div>
+
+  <!--Feature #3: Add a record to the phone book-->
+  <div id="feature-three">
+    <p>Enter the name and phone number to add</p>
+    <input id="nameFieldForThree" placeholder="Name"><br><input id="numFieldForThree" placeholder="Number"><button id="addNameAndNumFunction" onclick="addName()">Add Name & Number</button><br><br>
+  </div>
+
+  <!--Feature #4: Display all the names and numbers in the phone book-->
+  <div id="feature-four">
+    <p>Report all records in the phone book</p>
+    <!--<button id="display-all" onclick="displayAll()">Report all names/numbers</button><br>-->
+    <p id="displayAllResult"></p>
+    <p id="display-all" onclick="displayAll()"></p>
+  </div>
+  
+  <!--Feature #5: Delete a record from the phone book-->
+  <div id="feature-five">
+    <p>Delete someone from the phonebook</p>
+    <input id="deleteThis" placeholder="name to delete"><br><button id="deleteRecord" onclick="deleteNameAndNumber()">Delete Name & Number</button><br>
+    <p id="whoGotDeleted"></p>
+    <p id="showNewArray"></p>
+  </div>
+</body>
+</html>
